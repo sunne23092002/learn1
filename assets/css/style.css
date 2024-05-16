@@ -1,0 +1,252 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-class {
+    color: black !important;
+}
+
+#main {
+
+}
+    
+#header {
+    height: 46px;
+    background-color: black;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav .nav-arrow-down {
+    font-size: 10px;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+}
+
+/* Header */
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 16px;
+}
+
+#header .search-icon {
+    color: white;
+    font-size: 21px;
+    line-height: 46px;
+}
+
+/* Content */
+#content {
+    height: 1000px;
+    background-color: white;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+}
+
+#slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/w3s/assets/Img/Slider/slider1.png') top center / cover no-repeat;
+    filter: blur(1px);
+    z-index: -1;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#content {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60px; 
+
+}
+
+.avata {
+    width: 100%;
+    display: block;
+}
+
+.text-one {
+    position: absolute;
+    top: 30%;
+    left: 100px;
+    transform: translate(5%);
+    text-align: left;
+    color: white;
+    padding: 20px;
+    max-width: 600px;
+    font-size: 30px;
+}
+
+.about-text {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 1.4;
+}
+
+/* Hobies */
+.hobies-section {
+    background-color: #fff;
+}
+
+.text-two {
+    width: 100%;
+    padding: 64px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.text-two .section-sub-heading {
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 60%;
+}
+.place-list {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.place-item {
+    width: calc(33.33% - 80px); 
+    padding: 0 40px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.place-img {
+    width: 245px;
+    height: 148px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.place-content {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.place-view-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.place-view-btn:hover {
+    background-color: rgba(255, 0, 0, 1.8);
+}
+
+#footer  {
+   background-color: black;
+   color:white;
+
+}
+.contact-info{
+    width: 100%;
+    padding-top: 64px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+
