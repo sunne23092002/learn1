@@ -120,7 +120,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/w3s/assets/Img/Slider/slider1.png') top center / cover no-repeat;
+    background: url('/assets/Img/Slider/slider1.png') top center / cover no-repeat;
     filter: blur(1px);
     z-index: -1;
 }
