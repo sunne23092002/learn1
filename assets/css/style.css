@@ -3,10 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 .text-class {
@@ -38,6 +41,7 @@ html {
 
 #nav>li {
     display: inline-block;
+    scroll-behavior: smooth;
 }
 
 #nav li {
@@ -103,7 +107,6 @@ html {
 
 /* Content */
 #content {
-    height: 1000px;
     background-color: white;
 }
 
@@ -120,7 +123,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/assets/Img/Slider/slider1.png') top center / cover no-repeat;
+    background: url('images/graphics/slider1.png') top center / cover no-repeat;
     filter: blur(1px);
     z-index: -1;
 }
@@ -155,10 +158,12 @@ html {
     width: 100%;
     display: block;
 }
-
+.content-section{
+    position: relative;
+}
 .text-one {
     position: absolute;
-    top: 30%;
+    bottom: 20px;
     left: 100px;
     transform: translate(5%);
     text-align: left;
@@ -173,6 +178,7 @@ html {
     font-size: 20px;
     font-weight: 400px;
     line-height: 1.4;
+    text-align: justify;
 }
 
 /* Hobies */
@@ -237,16 +243,18 @@ html {
 }
 
 #footer  {
-   background-color: black;
-   color:white;
-
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 .contact-info{
-    width: 100%;
-    padding-top: 64px;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
+   padding-top: 40px;
+    line-height: 1.4;
 }
+.sosical-list{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
 
-
+}
